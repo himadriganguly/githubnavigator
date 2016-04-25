@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="headerwrap">
+  <div class="container">
+	   <div class="row">
+       <div class="col-lg-6">
+			      <h1>Search GitHub<br />repositories by keyword</h1>
+					  <form class="form-inline" role="form" action="/navigator" method="get">
+					         <div class="form-group">
+					                <input type="text" name="search_term" class="form-control" id="term"  placeholder="Enter your search term here">
+					         </div>
+					         <button type="submit" class="btn btn-warning btn-lg">Search</button>
+					  </form>
+					  <h3>You can download the source code from:<br /><a href="https://github.com/himadriganguly/githubnavigator" target="_blank">https://github.com/himadriganguly/githubnavigator</a></h3>
+					  <h3>GitHub API<br /><a href="https://developer.github.com/v3/" target="_blank">https://developer.github.com/v3/</a></h3>
+       </div><!-- /col-lg-6 -->
+			 <div class="col-lg-6">
+			      <img class="img-responsive" src="img/Octocat.png" alt="Octocat">
+			 </div><!-- /col-lg-6 -->
+
+     </div><!-- /row -->
+   </div><!-- /container -->
+</div><!-- /headerwrap -->
+{% endblock %}
